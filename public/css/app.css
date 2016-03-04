@@ -1,0 +1,224 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+html, body {
+	font-family: Georgia;
+	font-size: 18px;
+	height: 100%;
+}
+
+body{
+	background-color: #d2d2d2;
+	overflow: hidden;
+}
+
+a {cursor: pointer;}
+	
+h3 {
+	margin: 5px 0;
+}
+
+ul {
+	list-style: none;
+} 
+header, footer { height: 60px; background-color: #aaa; }
+footer {
+	border-top: 1px solid black;
+}
+
+.welcome {
+	height: 200px;
+	width: 100%;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 16px;
+}
+
+header, footer { height: 60px; }
+footer {
+	border-top: 1px solid black;
+}
+
+.ls-ui-view {
+	position: relative;
+	height: 100%;
+}
+
+section.content { 
+	overflow-y: hidden;
+	background-color: #d2d2d2;
+	color: #333;
+	padding: 10px 0px;
+	width: 100%;
+	height: 100%;
+} 
+
+.header-container {
+	box-shadow: black 2px 4px 9px 0px;
+	opacity: .7;
+	padding-top: 1px;
+}
+
+.header-container h1 {
+	font-family: Georgia;
+	font-size: 35px;
+	margin: 10px 0 0;
+	text-align: center;
+	line-height: 25px;
+}
+
+.header-container ul {
+	margin: 0;
+}
+
+.header-nav-links.right{
+	float: right;
+	position: relative;
+    right: 30px; 
+}
+
+.header-nav-links {
+	list-style: none;
+}
+
+.header-nav-links li {
+	float:left;
+	text-align: center;
+}
+
+.header-nav-links li a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.header-nav-links li a {
+	color: black;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+li.divider {
+	border-right: 1px black solid;
+	height: 18px;
+	width: 0;
+	margin: 0 10px;
+	position: relative;
+	top: 3px;
+}
+
+.dirName {
+	color: white;
+	font-size: 21px;
+	cursor: pointer;
+}
+
+
+/* file link */
+.fileLinkContainer.selected {
+	background-color: #111;
+	margin-right: 10px;
+}
+
+.fileLinkContainer.selected .fileLink {
+	font-size: 18px;
+	width: 100%;
+	background-color: #333;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+.fileLink {
+	font-size: 15px;
+	padding: 2px 0;
+	color: #368dc7;
+	cursor: pointer;
+}
+
+.fileLink:hover {
+	text-decoration: underline;
+}
+
+.fileLink:active {
+	color: #999;
+}
+
+tree {
+	display: block;
+}
+
+tree ul.collapsed {
+	display: none;
+}
+
+tree[family='child'] {
+	margin-left: 20px;
+}
+
+tree ul.collapsed {
+	display: none;
+}
+
+tree[family='child'] {
+	margin-left: 20px;
+}
+
+
+/* Users */
+.userCollections {
+	height: inherit;
+	width: inherit;
+	overflow-y:	auto; 
+}
+
+.userName{
+	margin-top: 0px;
+}
+
+
+/* Video */
+.vidPlayer {
+	text-align: center;
+}
+
+video {
+	background-color: black;
+	max-width: 768px;
+}
+
+
+
+/* auth */
+.social-logins a img {
+	height:64px;
+	width:64px;
+} 
+
+
+/*  sigin up  */
+form.signin {
+	margin: auto;
+	float: none;
+}
+
+
+/* home */
+.home{
+	height: inherit;
+}
+	
+.home nav li{
+	border-radius: 2px;	
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+
+.home .collections-container {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-top: 1px solid black;
+}
+

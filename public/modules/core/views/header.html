@@ -1,0 +1,12 @@
+<header class='header-container' data-ng-controller="HeaderController">	
+	<h1>Loan Star *</h1>
+	<nav>
+		<ul class="header-nav-links right">
+			<span ng-if="authentication.user !== ''">
+				<li><a href="#!/settings/profile">{{user.userName}}</a></li>
+				<li class="divider"></li>
+				<li><a href="/auth/signout">Sign Out</a></li>
+			</span>
+		</ul>
+	</nav>
+</header>

@@ -1,0 +1,34 @@
+Tasks - Epics - Goals 
+    general
+        -file locking
+        -video popup
+        -improve data structure
+        -Terms Of Service
+
+    server
+        -git sub module clientserver
+        -on socket connect verify clientserver user credentials 
+
+	clientserver
+        -configuration instructions
+        -send user credentials during connection init
+        -split into own repo
+        -forever
+
+
+Security  
+	npm htpasswd - password file utility
+
+
+
+Legal  
+      
+ home page
+    activity stream? 
+    friends online/lists
+    my files
+
+my account
+    my files
+    shared folders
+    friends

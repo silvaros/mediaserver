@@ -1,0 +1,32 @@
+<div class="home" data-ng-controller="HomeController">
+	<nav class="col-md-3">
+		<ul class="list-group">
+		  <li ng-class="getActiveCss('mine')" ng-click="onNavLinkClick('mine')" class="btn btn-default list-group-item">
+		    My Files
+		  </li>
+		  <li ng-class="getActiveCss('all')" ng-click="onNavLinkClick('all')" class="btn  btn-default list-group-item">
+		    Shared Collections
+		  </li>
+		  <li ng-class="getActiveCss('search')" ng-click="onNavLinkClick('search')" class="btn btn-default list-group-item">
+		    Search Collections
+		  </li>
+		  <li ng-class="getActiveCss('users')" ng-click="onNavLinkClick('users')" class="btn  btn-default list-group-item">
+		    Users
+		  </li>
+		</ul>
+	</nav>
+	
+	<h3>{{stateLabel}}</h3>
+	<div class="collections-container" ng-if="getCollectionCount() > 0">	
+		<div class='collection' ng-repeat="(collectionName, files) in collections">
+			<h4>{{collectionName}}</h4>
+			<div>
+				<tree family="file" ng-repeat="file in files"></tree>
+			</div>
+		</div> 
+	</div>
+
+	<div ng-if="getCollectionCount() === 0" class="collections-container" style="padding-top:20px;">	
+		No Collections Available
+	</div>
+</div>
